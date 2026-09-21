@@ -3,562 +3,671 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valerio Fiorentini | Software Engineer & AI Architect</title>
-    <meta name="description" content="Portfolio of Valerio Fiorentini - Software Engineer specializing in scalable cloud architectures, AI pipelines, computer vision, and modern web applications.">
+    <title>Valerio Fiorentini | Software Engineer • Data Engineer • Data Scientist</title>
+    <meta name="description" content="Portfolio of Valerio Fiorentini - Software Engineer, Data Engineer & Data Scientist specializing in scalable cloud architectures, high-throughput ETL pipelines, computer vision, and applied AI systems.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome / Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="app-container">
+    <div class="app-layout">
         
-        <!-- LEFT SIDEBAR / PROFILE CARD -->
+        <!-- =================================================================
+             LEFT PROFILE SIDEBAR
+             ================================================================= -->
         <aside class="profile-sidebar" id="profileSidebar">
-            <div class="profile-header">
-                <div class="avatar-wrapper">
-                    <div class="avatar-img">
-                        <span>VF</span>
-                    </div>
-                    <span class="status-indicator" title="Available for Opportunities"></span>
+            <div class="sidebar-top">
+                <div class="avatar-box">
+                    <img src="profile.png" alt="Valerio Fiorentini" class="avatar-photo">
+                    <span class="pulse-indicator" title="System Active"></span>
                 </div>
-                <h1 class="profile-name">Valerio Fiorentini</h1>
-                <p class="profile-title">Software Engineer & AI Architect</p>
-                <div class="brand-badge">VF.</div>
+                <h1 class="user-name">Valerio Fiorentini</h1>
+                <div class="role-pill-group">
+                    <span class="role-pill">Software Engineer</span>
+                    <span class="role-pill">Data Engineer</span>
+                    <span class="role-pill">Data Scientist</span>
+                </div>
             </div>
 
-            <div class="sidebar-scrollable">
-                <!-- Personal Info Table -->
-                <div class="info-table">
-                    <div class="info-row">
-                        <span class="info-label">Residence:</span>
-                        <span class="info-value">Italy</span>
+            <div class="sidebar-body">
+                <!-- Info List -->
+                <div class="info-group">
+                    <div class="info-entry">
+                        <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        <span class="info-val">Rome / Guidonia, IT</span>
                     </div>
-                    <div class="info-row">
-                        <span class="info-label">City:</span>
-                        <span class="info-value">Rome / Guidonia</span>
+                    <div class="info-entry">
+                        <span class="info-label"><i class="fa-solid fa-briefcase"></i> Experience</span>
+                        <span class="info-val highlight">3+ Years (Active)</span>
                     </div>
-                    <div class="info-row">
-                        <span class="info-label">Experience:</span>
-                        <span class="info-value highlight-accent">3+ Years (Active)</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Status:</span>
-                        <span class="info-value available-text">Open to Roles</span>
+                    <div class="info-entry">
+                        <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                        <span class="info-val">MSc AI & ML (in prog.)</span>
                     </div>
                 </div>
 
-                <div class="divider"></div>
+                <div class="section-divider"></div>
 
-                <!-- Languages Circular Gauges -->
-                <div class="languages-section">
-                    <h3 class="sidebar-heading">Languages</h3>
-                    <div class="circles-row">
-                        <div class="circle-item">
-                            <div class="circle-chart" data-percent="100">
-                                <svg viewBox="0 0 36 36" class="circular-chart">
-                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                    <path class="circle-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                </svg>
-                                <span class="percent-label">100%</span>
-                            </div>
-                            <span class="lang-title">Italian (Native)</span>
+                <!-- Languages Gauge -->
+                <div class="sidebar-block">
+                    <span class="block-title">Languages</span>
+                    <div class="lang-row">
+                        <div class="lang-dial">
+                            <svg viewBox="0 0 36 36" class="dial-svg">
+                                <path class="dial-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="dial-fill" stroke-dasharray="100, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="dial-value">100%</span>
+                            <span class="dial-title">Italian (Native)</span>
                         </div>
 
-                        <div class="circle-item">
-                            <div class="circle-chart" data-percent="80">
-                                <svg viewBox="0 0 36 36" class="circular-chart">
-                                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                    <path class="circle-fill" stroke-dasharray="80, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                </svg>
-                                <span class="percent-label">B2</span>
-                            </div>
-                            <span class="lang-title">English (Tech)</span>
+                        <div class="lang-dial">
+                            <svg viewBox="0 0 36 36" class="dial-svg">
+                                <path class="dial-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                <path class="dial-fill" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            </svg>
+                            <span class="dial-value">B2</span>
+                            <span class="dial-title">English (Tech)</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="divider"></div>
+                <div class="section-divider"></div>
 
-                <!-- Tech Skills Linear Progress -->
-                <div class="skills-section">
-                    <h3 class="sidebar-heading">Technical Stack</h3>
+                <!-- Technical Skills Bars -->
+                <div class="sidebar-block">
+                    <span class="block-title">Core Engineering Stack</span>
                     
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Python (AI, Data, FastAPI)</span>
-                            <span class="skill-pct">95%</span>
+                    <!-- Software Engineering -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Python (FastAPI, PyTorch, Pandas)</span>
+                            <span class="skill-num">95%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 95%;"></div></div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Next.js / React / TypeScript</span>
-                            <span class="skill-pct">90%</span>
+                    <!-- Data Engineering -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Data Engineering (ETL, Lakehouse, SQL)</span>
+                            <span class="skill-num">90%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 90%;"></div></div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Cloud Architecture (AWS S3, Aurora)</span>
-                            <span class="skill-pct">85%</span>
+                    <!-- Distributed & Cloud -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Distributed Systems (RabbitMQ, AWS S3/Aurora)</span>
+                            <span class="skill-num">88%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 88%;"></div></div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Distributed Queues (RabbitMQ, Celery)</span>
-                            <span class="skill-pct">88%</span>
+                    <!-- Web & Mobile -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>Full-Stack & Mobile (Next.js, React Native)</span>
+                            <span class="skill-num">88%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 88%;"></div></div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Docker / CI-CD / Microservices</span>
-                            <span class="skill-pct">85%</span>
+                    <!-- Machine Learning & CV -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>AI & Computer Vision (YOLO, LLMs, Qdrant)</span>
+                            <span class="skill-num">85%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 85%;"></div></div>
                     </div>
 
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Computer Vision & Deep Learning (YOLO)</span>
-                            <span class="skill-pct">80%</span>
+                    <!-- DevOps -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <span>DevOps & Containerization (Docker, CI/CD)</span>
+                            <span class="skill-num">85%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                        <div class="skill-track"><div class="skill-bar" style="width: 85%;"></div></div>
                     </div>
                 </div>
 
-                <div class="divider"></div>
+                <div class="section-divider"></div>
 
-                <!-- Core Engineering Competencies -->
-                <div class="competencies-list">
-                    <div class="comp-item"><i class="fa-solid fa-check"></i> End-to-End System Ownership</div>
-                    <div class="comp-item"><i class="fa-solid fa-check"></i> High-Throughput ETL Pipelines</div>
-                    <div class="comp-item"><i class="fa-solid fa-check"></i> Production LLMs & NLP Servicing</div>
-                    <div class="comp-item"><i class="fa-solid fa-check"></i> REST & GraphQL API Design</div>
+                <!-- Competencies checklist -->
+                <div class="sidebar-block">
+                    <span class="block-title">Key Methodologies</span>
+                    <ul class="method-list">
+                        <li><i class="fa-solid fa-check"></i> Event-Driven Architecture</li>
+                        <li><i class="fa-solid fa-check"></i> Microservices & Message Queuing</li>
+                        <li><i class="fa-solid fa-check"></i> Automated CI/CD & Dockerization</li>
+                        <li><i class="fa-solid fa-check"></i> Vector Search & Semantic AI</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Profile Footer Links -->
-            <div class="profile-footer">
-                <a href="https://github.com/valeriofiorentini" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:valeriofiorentini2002@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+            <!-- Footer Socials -->
+            <div class="sidebar-footer">
+                <a href="https://github.com/valeriofiorentini" target="_blank" rel="noopener" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:valeriofiorentini2002@gmail.com" title="Send Email"><i class="fa-solid fa-envelope"></i></a>
                 <a href="tel:+393281163674" title="Call"><i class="fa-solid fa-phone"></i></a>
-                <a href="https://github.com/valeriofiorentini/cv-fiorentini-valerio" target="_blank" rel="noopener" title="Source Repo"><i class="fa-solid fa-code-branch"></i></a>
+                <a href="https://github.com/valeriofiorentini/cv-fiorentini-valerio" target="_blank" rel="noopener" title="Repository"><i class="fa-solid fa-code-branch"></i></a>
             </div>
         </aside>
 
-        <!-- MAIN CONTENT VIEWPORT -->
-        <main class="main-content">
+        <!-- =================================================================
+             MAIN VIEWPORT
+             ================================================================= -->
+        <main class="main-viewport">
             
-            <!-- Mobile Toggle Bar -->
-            <div class="mobile-top-bar">
-                <button class="menu-toggle-btn" id="menuToggle" aria-label="Toggle Navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <span class="mobile-logo">VF.</span>
-                <a href="#contact" class="mobile-contact-icon"><i class="fa-solid fa-paper-plane"></i></a>
-            </div>
+            <!-- Mobile Header Bar -->
+            <header class="mobile-nav-bar">
+                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Sidebar"><i class="fa-solid fa-bars"></i></button>
+                <div class="mobile-brand">VF.</div>
+                <a href="#contact" class="mobile-cta"><i class="fa-solid fa-envelope"></i></a>
+            </header>
 
-            <!-- HERO BANNER -->
-            <section class="hero-banner" id="home">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h2 class="hero-headline">Building Resilient Cloud & AI Architectures</h2>
-                    <div class="hero-code">
-                        <code>&lt;code&gt; I architect scalable data pipelines, deep vision models & enterprise microservices &lt;/code&gt;</code>
+            <!-- HERO STAGE -->
+            <section class="hero-stage" id="home">
+                <div class="hero-backdrop"></div>
+                <div class="hero-inner">
+                    <div class="hero-tag-wrap">
+                        <span class="glow-tag"><i class="fa-solid fa-terminal"></i> Software Engineering • Data Engineering • Applied AI</span>
                     </div>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn-primary">EXPLORE PROJECTS <i class="fa-solid fa-arrow-right"></i></a>
-                        <a href="mailto:valeriofiorentini2002@gmail.com" class="btn-secondary">GET IN TOUCH</a>
+                    <h2 class="hero-title">Architecting High-Performance Systems, ETL Pipelines & Applied AI</h2>
+                    <div class="hero-code-snippet">
+                        <code>&lt;code&gt; Bridging reliable software engineering, scalable data architectures & production machine learning &lt;/code&gt;</code>
+                    </div>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn-amber">EXPLORE PROJECTS <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#experience" class="btn-ghost">VIEW EXPERIENCE</a>
+                        <a href="mailto:valeriofiorentini2002@gmail.com" class="btn-ghost"><i class="fa-solid fa-paper-plane"></i> CONTACT ME</a>
                     </div>
                 </div>
             </section>
 
-            <!-- STATS COUNTER BAR -->
-            <section class="stats-bar">
-                <div class="stat-card">
-                    <span class="stat-number">3+</span>
-                    <span class="stat-label">Years Production Exp</span>
+            <!-- STATS STRIP -->
+            <section class="stats-strip">
+                <div class="stat-box">
+                    <span class="stat-val">3+</span>
+                    <span class="stat-desc">Years Production Engineering</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Engineered Systems</span>
+                <div class="stat-box">
+                    <span class="stat-val">15+</span>
+                    <span class="stat-desc">Enterprise & Research Projects</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">99.9%</span>
-                    <span class="stat-label">Production Reliability</span>
+                <div class="stat-box">
+                    <span class="stat-val">99.9%</span>
+                    <span class="stat-desc">Reliability & SLA Compliance</span>
                 </div>
-                <div class="stat-card">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Ownership & Passion</span>
-                </div>
-            </section>
-
-            <!-- CORE SERVICES / ARCHITECTURAL DOMAINS -->
-            <section class="content-section" id="services">
-                <h3 class="section-title">Core Engineering Domains</h3>
-                <div class="services-grid">
-                    
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
-                        <h4 class="service-name">Distributed Cloud & Microservices</h4>
-                        <p class="service-desc">
-                            Design and orchestration of asynchronous message-driven backends using RabbitMQ, Celery, and AWS (S3, Aurora). Specializing in zero-loss transaction pipelines and decoupled architectures.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
-                        <h4 class="service-name">AI, Vision & NLP Pipelines</h4>
-                        <p class="service-desc">
-                            Applied machine learning from research to production: YOLO multi-camera computer vision for automated inspection, LLM integrations, NER, and high-throughput vector/embedding analysis.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h4 class="service-name">High-Performance Web & Platforms</h4>
-                        <p class="service-desc">
-                            Full-lifecycle development of responsive enterprise portals, multi-tenant e-commerce engines, and internal analytics tools with Next.js, TypeScript, and Dockerized environments.
-                        </p>
-                    </div>
-
+                <div class="stat-box">
+                    <span class="stat-val">100%</span>
+                    <span class="stat-desc">End-to-End Ownership</span>
                 </div>
             </section>
 
-            <!-- WORK EXPERIENCE TIMELINE -->
-            <section class="content-section" id="experience">
-                <h3 class="section-title">Work Experience</h3>
-                <div class="timeline-container">
-                    
-                    <div class="timeline-card">
-                        <div class="timeline-header">
+            <!-- 3 CORE PILLARS -->
+            <section class="section-container" id="pillars">
+                <div class="section-header">
+                    <span class="section-eyebrow">Professional Profile</span>
+                    <h3 class="section-heading">Three Integrated Engineering Disciplines</h3>
+                </div>
+
+                <div class="pillars-grid">
+                    <!-- Pillar 1: Software Engineer -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h4 class="pillar-title">Software Engineer</h4>
+                        <p class="pillar-subtitle">Backend & Distributed Microservices</p>
+                        <p class="pillar-body">
+                            Architecting resilient backend systems with Python (FastAPI), Node.js, and TypeScript. Specializing in event-driven architectures with RabbitMQ, asynchronous background task dispatching, secure REST/GraphQL APIs, and Dockerized microservices.
+                        </p>
+                        <div class="pillar-tags">
+                            <span>Python / FastAPI</span><span>RabbitMQ</span><span>Node.js / Express</span><span>Docker</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2: Data Engineer -->
+                    <div class="pillar-card highlight-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+                        <h4 class="pillar-title">Data Engineer</h4>
+                        <p class="pillar-subtitle">High-Throughput ETL & Lakehouse Systems</p>
+                        <p class="pillar-body">
+                            Designing automated extraction, transformation, and load (ETL) pipelines processing multi-source enterprise retail and policy datasets. Certified in Microsoft Fabric Lakehouse architectures, batch/streaming pipelines, relational normalization, and AWS cloud storage.
+                        </p>
+                        <div class="pillar-tags">
+                            <span>MS Fabric Certified</span><span>Pandas / ETL</span><span>AWS S3 & Aurora</span><span>Data Modeling</span><span>GitLab CI/CD</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3: Data Scientist & AI Engineer -->
+                    <div class="pillar-card">
+                        <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h4 class="pillar-title">Data Scientist / AI Engineer</h4>
+                        <p class="pillar-subtitle">Machine Learning, Vision & Production LLMs</p>
+                        <p class="pillar-body">
+                            Training and deploying production ML systems: YOLOv8 multi-camera computer vision for industrial anomaly detection, Generative AI & Claude/GPT copilot integration with streaming SSE, Qdrant vector databases, and predictive price forecasting (Prophet).
+                        </p>
+                        <div class="pillar-tags">
+                            <span>YOLOv8 Vision</span><span>PyTorch</span><span>Qdrant Vectors</span><span>LLMs / Prompt Eng.</span><span>Forecasting</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK EXPERIENCE -->
+            <section class="section-container" id="experience">
+                <div class="section-header">
+                    <span class="section-eyebrow">Career Timeline</span>
+                    <h3 class="section-heading">Professional Work Experience</h3>
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-entry">
+                        <div class="entry-header">
                             <div>
-                                <h4 class="role-title">Software Engineer & System Architect</h4>
-                                <span class="company-name"><i class="fa-solid fa-building"></i> Live Tech Srl</span>
+                                <h4 class="job-title">Software Engineer & System Architect</h4>
+                                <span class="job-company"><i class="fa-solid fa-building"></i> Live Tech Srl</span>
                             </div>
-                            <span class="timeline-badge">01/07/2021 – Present</span>
+                            <span class="job-badge">01/07/2021 – Present</span>
                         </div>
-                        <p class="role-intro">
-                            Full end-to-end ownership of software lifecycle, taking autonomous architectural decisions and driving mission-critical projects from conception to production rollout.
+                        <p class="job-summary">
+                            Taking autonomous architectural decisions and end-to-end engineering ownership across the entire software development lifecycle for mission-critical enterprise systems.
                         </p>
-                        <ul class="role-bullets">
-                            <li><strong>Cloud & Message Broker Architectures:</strong> Architected distributed dispatching systems with RabbitMQ and AWS (S3, Aurora), managing automated asynchronous workflows with high fault tolerance.</li>
-                            <li><strong>Automated Data & ETL Pipelines:</strong> Engineered robust pipelines for document extraction (OCR, PDF sanitization), automated PEC email categorization, and multi-source retail database synchronization.</li>
-                            <li><strong>Production AI Integration:</strong> Deployed generative AI & LLM components for enterprise conversational systems, contextual question-answering, and classification with strict latency SLAs.</li>
-                            <li><strong>Full-Stack Solutions:</strong> Developed scalable enterprise web applications, REST APIs, and administrative dashboards, implementing Docker containerization and CI/CD pipelines.</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span>Python</span><span>FastAPI</span><span>AWS Aurora & S3</span><span>RabbitMQ</span><span>Docker</span><span>LLMs</span><span>Next.js</span><span>GitLab CI/CD</span>
+                        <div class="job-responsibilities">
+                            <div class="resp-item">
+                                <strong><i class="fa-solid fa-network-wired"></i> Distributed Message Queues & Cloud:</strong> Designed and deployed asynchronous event-driven message dispatching architectures with RabbitMQ and AWS (S3, Aurora RDS), ensuring zero-loss transactional routing.
+                            </div>
+                            <div class="resp-item">
+                                <strong><i class="fa-solid fa-gears"></i> Automated Data & ETL Pipelines:</strong> Built resilient data processing pipelines handling retail product catalog synchronizations, automated certified email (PEC) routing, and structured PDF/DPI policy document parsing.
+                            </div>
+                            <div class="resp-item">
+                                <strong><i class="fa-solid fa-robot"></i> Applied AI & LLM Systems:</strong> Integrated conversational LLM agents, contextual document QA, and custom NLP categorization models into client workflows with sub-second response times.
+                            </div>
+                            <div class="resp-item">
+                                <strong><i class="fa-solid fa-box-archive"></i> DevOps & Production Deployments:</strong> Maintained Docker containerized microservice clusters, automated CI/CD pipelines, and production staging environments.
+                            </div>
+                        </div>
+                        <div class="tech-tag-row">
+                            <span>Python</span><span>FastAPI</span><span>AWS (S3/Aurora)</span><span>RabbitMQ</span><span>Docker</span><span>GitLab CI/CD</span><span>LLMs</span><span>PostgreSQL</span>
                         </div>
                     </div>
-
                 </div>
             </section>
 
             <!-- EDUCATION & CERTIFICATIONS -->
-            <section class="content-section" id="education">
-                <h3 class="section-title">Education & Certifications</h3>
-                <div class="edu-cert-grid">
-                    
-                    <div class="info-card">
-                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <span class="card-date">2021 – Present</span>
-                        <h4 class="card-title">MSc Computer Engineering: AI & Machine Learning</h4>
-                        <p class="card-sub">Roma Tre University</p>
-                        <p class="card-text">Specialization in Deep Learning, Optimization, Big Data Analytics, Heuristic Algorithms, and Machine Learning Systems.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <div class="card-icon"><i class="fa-solid fa-university"></i></div>
-                        <span class="card-date">Completed</span>
-                        <h4 class="card-title">BSc in Computer Engineering</h4>
-                        <p class="card-sub">Università Telematica Internazionale UNINETTUNO</p>
-                        <p class="card-text">Foundations in software engineering, distributed systems, algorithms & data structures, databases, and computer networks.</p>
-                    </div>
-
-                    <div class="info-card cert-card">
-                        <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
-                        <span class="card-date">Credential</span>
-                        <h4 class="card-title">Microsoft Fabric Data Engineer</h4>
-                        <p class="card-sub">Microsoft</p>
-                        <p class="card-text">Lakehouse architecture, big data transformation, Delta Parquet structures, and scalable enterprise data modeling.</p>
-                    </div>
-
-                    <div class="info-card cert-card">
-                        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <span class="card-date">Credential</span>
-                        <h4 class="card-title">Cisco Cybersecurity & Kaggle Data Science</h4>
-                        <p class="card-sub">Cisco Networking Academy & Kaggle</p>
-                        <p class="card-text">Network security principles, vulnerability assessment, exploratory data analysis, and advanced Pandas data manipulation.</p>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- DETAILED PROJECTS PORTFOLIO -->
-            <section class="content-section" id="projects">
-                <div class="projects-header">
-                    <div>
-                        <h3 class="section-title">Featured Projects & Systems</h3>
-                        <p class="section-sub">A curated selection of real-world enterprise architectures, AI research implementations, and production platforms.</p>
-                    </div>
-                    <!-- Filter Tabs -->
-                    <div class="filter-tabs">
-                        <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="enterprise">Enterprise Systems</button>
-                        <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
-                        <button class="filter-btn" data-filter="web">Web & Platforms</button>
-                    </div>
+            <section class="section-container" id="education">
+                <div class="section-header">
+                    <span class="section-eyebrow">Academic Background</span>
+                    <h3 class="section-heading">Education & Professional Certifications</h3>
                 </div>
 
-                <div class="projects-grid" id="projectsGrid">
-
-                    <!-- PROJECT 1: Asynchronous Dispatching & Message Broker -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-network-wired"></i> Enterprise Architecture</span>
-                            <span class="project-status">Production</span>
-                        </div>
-                        <h4 class="project-title">Asynchronous Enterprise Message Broker & Dispatcher</h4>
-                        <p class="project-summary">
-                            Architected a high-resilience, event-driven message dispatching engine powered by RabbitMQ and Python microservices. Designed to process, validate, and securely route critical business communications (including certified PEC emails and automated notifications) with zero data loss, automatic retries, and comprehensive dead-letter logging.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Distributed worker pool with rate limiting</span>
-                            <span><i class="fa-solid fa-check"></i> Decoupled publisher-subscriber architecture</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>RabbitMQ</span><span>Python</span><span>FastAPI</span><span>Docker</span><span>PostgreSQL</span>
-                        </div>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="card-corner-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="date-chip">2021 – Present</span>
+                        <h4 class="edu-degree">MSc in Computer Engineering: AI & Machine Learning</h4>
+                        <span class="edu-institution">Roma Tre University</span>
+                        <p class="edu-details">Advanced coursework in Deep Learning, Operations Research & Metaheuristic Optimization, Big Data Analytics, Statistical Learning, and Distributed Computing.</p>
                     </div>
 
-                    <!-- PROJECT 2: High-Throughput Retail ETL Pipeline -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-database"></i> Big Data & ETL</span>
-                            <span class="project-status">Production</span>
-                        </div>
-                        <h4 class="project-title">High-Throughput Enterprise ETL Pipeline</h4>
-                        <p class="project-summary">
-                            Engineered an automated data extraction and transformation pipeline handling massive retail catalog updates, pricing feeds, and multi-store inventories. Built with modular Python transformers, automated schema migrations, and GitLab CI/CD for continuous validation and deployment across staging and production clusters.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Streamlined large-scale batch & incremental jobs</span>
-                            <span><i class="fa-solid fa-check"></i> Automated reconciliation & anomaly detection</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>Python</span><span>Pandas</span><span>GitLab CI/CD</span><span>Docker</span><span>ETL</span>
-                        </div>
+                    <div class="edu-card">
+                        <div class="card-corner-icon"><i class="fa-solid fa-university"></i></div>
+                        <span class="date-chip">Completed</span>
+                        <h4 class="edu-degree">BSc in Computer Engineering</h4>
+                        <span class="edu-institution">Università Telematica Internazionale UNINETTUNO</span>
+                        <p class="edu-details">Rigorous foundations in Software Engineering, Algorithms & Data Structures, Relational Database Management, Operating Systems, and Networking.</p>
                     </div>
 
-                    <!-- PROJECT 3: Industrial Computer Vision & YOLO Camera Inspection -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-camera"></i> Computer Vision</span>
-                            <span class="project-status">Research & Production</span>
-                        </div>
-                        <h4 class="project-title">Multi-Camera Industrial Vision & YOLO Defect Detection</h4>
-                        <p class="project-summary">
-                            Developed a custom deep learning inspection pipeline combining multi-angle industrial camera streams with fine-tuned YOLO (You Only Look Once) neural networks. Engineered automated data labeling pipelines, synthetic augmentation, and real-time defect classification to assist quality assurance in manufacturing environments.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Real-time inference on multi-camera feeds</span>
-                            <span><i class="fa-solid fa-check"></i> Custom bounding-box & anomaly training</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>Computer Vision</span><span>Python</span>
-                        </div>
+                    <div class="edu-card cert-card">
+                        <div class="card-corner-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="date-chip">Microsoft Certified</span>
+                        <h4 class="edu-degree">Microsoft Fabric Data Engineer</h4>
+                        <span class="edu-institution">Microsoft Official Certification</span>
+                        <p class="edu-details">Lakehouse architecture design, Delta Parquet transformation, Apache Spark data engineering, and scalable enterprise data warehousing.</p>
                     </div>
 
-                    <!-- PROJECT 4: Document Parsing & OCR Pipeline -->
-                    <div class="project-card" data-category="enterprise">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-file-contract"></i> NLP & Extraction</span>
-                            <span class="project-status">Enterprise Solution</span>
-                        </div>
-                        <h4 class="project-title">Insurance Policy & DPI Document Processing Pipeline</h4>
-                        <p class="project-summary">
-                            Engineered a specialized document extraction suite consisting of format extractors, payload brokers, and dispatchers. Seamlessly parses complex insurance policies, PDF contracts, and DPI forms into validated relational models, integrating AWS S3 storage and transactional databases.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Modular broker & extractor microservice pattern</span>
-                            <span><i class="fa-solid fa-check"></i> Automated validation & relational normalization</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>FastAPI</span><span>AWS S3</span><span>MySQL</span><span>Document AI</span><span>Docker</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 5: Yelp Big Data Mining & Recommender -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-chart-pie"></i> Machine Learning & NLP</span>
-                            <span class="project-status">Academic Research</span>
-                        </div>
-                        <h4 class="project-title">Yelp Big Data Intelligence & Hybrid Recommender</h4>
-                        <p class="project-summary">
-                            End-to-end data mining and machine learning framework applied to the massive Yelp Academic Dataset (150,000+ businesses, millions of reviews). Built spatial GIS density heatmaps (Folium), NLP sentiment and TF-IDF topic modeling on customer feedback, and a hybrid collaborative filtering recommender engine.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> 5 comprehensive Jupyter research notebooks</span>
-                            <span><i class="fa-solid fa-check"></i> Spatial GIS + NLP Sentiment + Matrix Factorization</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>Python</span><span>Scikit-Learn</span><span>NLP</span><span>Folium</span><span>Collaborative Filtering</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 6: Heuristic Scheduling Optimization -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-gears"></i> Operations Research</span>
-                            <span class="project-status">Algorithm Engine</span>
-                        </div>
-                        <h4 class="project-title">Combinatorial & Heuristic Scheduling Optimization</h4>
-                        <p class="project-summary">
-                            Formulation and implementation of advanced metaheuristic optimization algorithms to solve complex NP-Hard resource-constrained scheduling problems (RCPSP). Tested and benchmarked greedy heuristics, local search, genetic algorithms, and simulated annealing against standard academic benchmark instances.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Near-optimal makespan convergence on NP-Hard constraints</span>
-                            <span><i class="fa-solid fa-check"></i> High-speed vectorized Python algorithmic execution</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>Python</span><span>Metaheuristics</span><span>Optimization</span><span>Algorithms</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 7: Audio CVAE Generative Synthesis -->
-                    <div class="project-card" data-category="ai">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-wave-square"></i> Deep Generative AI</span>
-                            <span class="project-status">Deep Learning</span>
-                        </div>
-                        <h4 class="project-title">Conditional Variational Autoencoder (CVAE) Audio Synthesis</h4>
-                        <p class="project-summary">
-                            Designed and trained a deep generative Conditional Variational Autoencoder (CVAE) in PyTorch to synthesize, interpolate, and reconstruct acoustic audio spectrograms conditioned on acoustic feature classes. Employs latent space exploration, STFT preprocessing, and Griffin-Lim phase reconstruction.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Continuous latent space sound manipulation</span>
-                            <span><i class="fa-solid fa-check"></i> Custom spectrogram loss functions in PyTorch</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>PyTorch</span><span>Deep Learning</span><span>Librosa</span><span>CVAE</span><span>Audio DSP</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 8: Shop Ora Guidonia 1 -->
-                    <div class="project-card" data-category="web">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-bag-shopping"></i> E-Commerce Platform</span>
-                            <span class="project-status">Live Platform</span>
-                        </div>
-                        <h4 class="project-title">Shop Ora Guidonia 1: Multi-Vendor Local Commerce</h4>
-                        <p class="project-summary">
-                            A production web marketplace developed to empower local businesses in Guidonia with digital retail infrastructure. Features dynamic catalog filtering, real-time inventory management, merchant dashboards, and a mobile-first responsive shopping flow built on Next.js.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Server-Side Rendered (SSR) for optimal local SEO</span>
-                            <span><i class="fa-solid fa-check"></i> Seamless merchant inventory and order lifecycle</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Vercel</span><span>E-Commerce</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 9: Sanitaria Asia Digital Healthcare -->
-                    <div class="project-card" data-category="web">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-notes-medical"></i> Healthcare Portal</span>
-                            <span class="project-status">Production Client</span>
-                        </div>
-                        <h4 class="project-title">Sanitaria Asia: Medical & Orthopedic Digital Portal</h4>
-                        <p class="project-summary">
-                            Corporate web presence and digital product catalog for a medical and healthcare equipment company. Engineered with Next.js, featuring optimized media delivery, interactive medical supply catalogs, appointment inquiries, and accessible modern UI.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> High Core Web Vitals & instantaneous page navigation</span>
-                            <span><i class="fa-solid fa-check"></i> Dockerized container deployment for reliable uptime</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>Next.js</span><span>React</span><span>Docker</span><span>Responsive Design</span>
-                        </div>
-                    </div>
-
-                    <!-- PROJECT 10: DealCart Application -->
-                    <div class="project-card" data-category="web">
-                        <div class="project-header">
-                            <span class="project-type"><i class="fa-solid fa-cart-shopping"></i> Web Application</span>
-                            <span class="project-status">Application</span>
-                        </div>
-                        <h4 class="project-title">DealCart: Smart Shopping & Deal Aggregation</h4>
-                        <p class="project-summary">
-                            Interactive shopping application delivering product discovery, deal aggregation, and dynamic shopping cart synchronization. Implements state management for complex cart actions, discount calculations, and responsive interface workflows.
-                        </p>
-                        <div class="project-highlights">
-                            <span><i class="fa-solid fa-check"></i> Real-time price tracking & multi-item calculations</span>
-                            <span><i class="fa-solid fa-check"></i> Clean component architecture & state sync</span>
-                        </div>
-                        <div class="project-tags">
-                            <span>React</span><span>Node.js</span><span>JavaScript</span><span>REST API</span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- CONTACT & FOOTER SECTION -->
-            <section class="content-section" id="contact">
-                <div class="contact-card">
-                    <h3 class="contact-title">Let's Build Something Exceptional</h3>
-                    <p class="contact-subtitle">
-                        Whether you are looking for a Software Engineer to take ownership of cloud backends, scale data pipelines, or deploy cutting-edge AI systems, feel free to reach out.
-                    </p>
-                    <div class="contact-grid">
-                        <a href="mailto:valeriofiorentini2002@gmail.com" class="contact-pill">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>valeriofiorentini2002@gmail.com</span>
-                        </a>
-                        <a href="tel:+393281163674" class="contact-pill">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>(+39) 328 1163674</span>
-                        </a>
-                        <a href="https://github.com/valeriofiorentini" target="_blank" rel="noopener" class="contact-pill">
-                            <i class="fa-brands fa-github"></i>
-                            <span>github.com/valeriofiorentini</span>
-                        </a>
-                        <span class="contact-pill">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Rome / Guidonia, Italy</span>
-                        </span>
+                    <div class="edu-card cert-card">
+                        <div class="card-corner-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <span class="date-chip">Industry Badges</span>
+                        <h4 class="edu-degree">Cisco Cybersecurity & Kaggle Data Science</h4>
+                        <span class="edu-institution">Cisco Networking Academy & Kaggle</span>
+                        <p class="edu-details">Network vulnerability testing, threat mitigation principles, advanced Pandas data manipulation, and exploratory data analysis (EDA).</p>
                     </div>
                 </div>
             </section>
 
+            <!-- =================================================================
+                 PROJECTS PORTFOLIO - CLEARLY SEPARATED CATEGORIES
+                 ================================================================= -->
+            <section class="section-container" id="projects">
+                <div class="section-header">
+                    <span class="section-eyebrow">Engineering Portfolio</span>
+                    <h3 class="section-heading">Featured Engineering Projects</h3>
+                    <p class="section-lead">Divided into three distinct categories: Enterprise Systems, University AI Research, and Personal/Client Platforms.</p>
+                </div>
+
+                <!-- Navigation Tabs between Categories -->
+                <div class="category-nav">
+                    <a href="#cat-enterprise" class="cat-pill"><i class="fa-solid fa-building"></i> Enterprise Systems</a>
+                    <a href="#cat-university" class="cat-pill"><i class="fa-solid fa-graduation-cap"></i> University & AI Research</a>
+                    <a href="#cat-personal" class="cat-pill highlight-pill"><i class="fa-solid fa-mobile-screen-button"></i> Personal & Client Apps</a>
+                </div>
+
+                <!-- =============================================================
+                     CATEGORY 1: ENTERPRISE & INDUSTRIAL SYSTEMS
+                     ============================================================= -->
+                <div class="project-group" id="cat-enterprise">
+                    <div class="group-title-bar">
+                        <div class="group-title-icon"><i class="fa-solid fa-server"></i></div>
+                        <div>
+                            <h4 class="group-heading">1. Enterprise & Industrial Systems (Work Experience)</h4>
+                            <p class="group-sub">Mission-critical backends, distributed message brokers, and automated data pipelines architected for production environments.</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        
+                        <!-- Project: Message Broker -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-network-wired"></i> Distributed Architecture</span>
+                                <span class="proj-status">Production</span>
+                            </div>
+                            <h5 class="proj-name">Enterprise Asynchronous Message Broker & Dispatcher</h5>
+                            <p class="proj-desc">
+                                Engineered a high-throughput, decoupled event-driven dispatching system leveraging RabbitMQ and Python/FastAPI microservices. Purpose-built to process, validate, and securely route corporate communications (including legal certified PEC emails and automated notifications) with zero data loss, concurrency controls, and comprehensive dead-letter audit logging.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Worker pool architecture with rate-limiting & backoff retry logic</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Fully decoupled publish-subscribe queues preventing system bottlenecks</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>RabbitMQ</span><span>Python</span><span>FastAPI</span><span>Docker</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: Retail ETL -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-database"></i> Big Data & Data Engineering</span>
+                                <span class="proj-status">Production</span>
+                            </div>
+                            <h5 class="proj-name">High-Throughput Enterprise Retail ETL Pipeline</h5>
+                            <p class="proj-desc">
+                                Automated data extraction, transformation, and loading pipeline designed to synchronize large-scale commercial catalog feeds, dynamic pricing updates, and multi-store inventories. Built with modular Python transformers, automated schema validation, and GitLab CI/CD pipelines to guarantee data integrity across distributed databases.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Automated batch and incremental delta data synchronization</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Reconciliation algorithms detecting catalog anomalies and discrepancies</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>Python</span><span>Pandas</span><span>GitLab CI/CD</span><span>Docker</span><span>ETL</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: Computer Vision YOLO -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-video"></i> Computer Vision & Deep Learning</span>
+                                <span class="proj-status">Applied AI</span>
+                            </div>
+                            <h5 class="proj-name">Industrial Multi-Camera Vision & YOLO Defect Inspection</h5>
+                            <p class="proj-desc">
+                                Developed an automated visual inspection and defect detection pipeline integrating synchronized industrial camera streams with custom fine-tuned YOLO (You Only Look Once) deep neural networks. Features synthetic dataset augmentation, custom bounding-box annotation workflows, and real-time inference for automated quality assurance.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Multi-angle camera stream ingestion and synchronized frame processing</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Optimized inference delivering millisecond defect classification</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>CUDA</span><span>Python</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: Document AI -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-file-shield"></i> Document AI & Cloud</span>
+                                <span class="proj-status">Enterprise Solution</span>
+                            </div>
+                            <h5 class="proj-name">Insurance Policy & DPI Document Processing Suite</h5>
+                            <p class="proj-desc">
+                                Created a microservice pipeline (format extractors, message brokers, and dispatchers) that automatically parses, sanitizes, and normalizes complex insurance contracts, PDF documentation, and DPI safety compliance forms into relational databases with AWS S3 archival.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Modular extractor-broker pattern for zero-touch document digestion</span>
+                                <span><i class="fa-solid fa-angle-right"></i> High-accuracy regex/OCR field extraction with strict validation schemas</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>FastAPI</span><span>AWS S3</span><span>MySQL</span><span>Document AI</span><span>Docker</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =============================================================
+                     CATEGORY 2: UNIVERSITY & AI RESEARCH PROJECTS
+                     ============================================================= -->
+                <div class="project-group" id="cat-university">
+                    <div class="group-title-bar">
+                        <div class="group-title-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4 class="group-heading">2. University & AI Research Projects</h4>
+                            <p class="group-sub">Academic research in machine learning, combinatorial optimization, audio neural modeling, and big data analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        
+                        <!-- Project: Yelp -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-chart-pie"></i> Big Data & Data Science</span>
+                                <span class="proj-status">Academic Research</span>
+                            </div>
+                            <h5 class="proj-name">Yelp Big Data Intelligence & Hybrid Recommender System</h5>
+                            <p class="proj-desc">
+                                Comprehensive end-to-end data science study performed on the Yelp Academic Dataset (150,000+ businesses, millions of user reviews). Structured across 5 modular research notebooks featuring geospatial GIS density maps (Folium), NLP sentiment analysis, TF-IDF topic extraction, and collaborative filtering recommendation models.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Geospatial heatmaps & demographic cluster discovery</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Matrix factorization & hybrid recommendation algorithms</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>Python</span><span>Scikit-Learn</span><span>NLP</span><span>Folium</span><span>Collaborative Filtering</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: Scheduling Optimization -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-calculator"></i> Operations Research</span>
+                                <span class="proj-status">Algorithm Engine</span>
+                            </div>
+                            <h5 class="proj-name">Combinatorial & Heuristic Scheduling Optimization</h5>
+                            <p class="proj-desc">
+                                Mathematical modeling and algorithmic implementation to solve NP-Hard Resource-Constrained Project Scheduling Problems (RCPSP). Designed and benchmarked metaheuristic approaches including Genetic Algorithms, Simulated Annealing, and Greedy Local Search against standard academic benchmark problem libraries.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> High makespan reduction under strict resource & precedence constraints</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Vectorized Python implementation optimized for rapid convergence</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>Python</span><span>Metaheuristics</span><span>Genetic Algorithms</span><span>Operations Research</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: Audio CVAE -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-wave-square"></i> Deep Generative AI</span>
+                                <span class="proj-status">Neural Modeling</span>
+                            </div>
+                            <h5 class="proj-name">Conditional Variational Autoencoder (CVAE) Audio Synthesis</h5>
+                            <p class="proj-desc">
+                                Designed and trained a deep generative Conditional Variational Autoencoder in PyTorch to synthesize, interpolate, and reconstruct acoustic spectrograms conditioned on target sound features. Implemented continuous latent space arithmetic, STFT audio representations, and Griffin-Lim phase reconstruction.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Continuous smooth traversal and interpolation in acoustic latent space</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Custom multi-component loss functions (KL divergence + reconstruction loss)</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>PyTorch</span><span>Librosa</span><span>Deep Learning</span><span>CVAE</span><span>Audio DSP</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- =============================================================
+                     CATEGORY 3: PERSONAL & CLIENT APPLICATIONS
+                     ============================================================= -->
+                <div class="project-group" id="cat-personal">
+                    <div class="group-title-bar">
+                        <div class="group-title-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div>
+                            <h4 class="group-heading">3. Personal & Client Applications (Full-Stack & Mobile)</h4>
+                            <p class="group-sub">Real-world production applications, mobile platforms with AI copilots, e-commerce, and enterprise web solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- FEATURED STAR PROJECT: EasyMarket AI / ShopOra -->
+                    <div class="featured-project-card">
+                        <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured Full-Stack AI Ecosystem</div>
+                        <div class="featured-header">
+                            <div>
+                                <h4 class="featured-title">EasyMarket AI (ShopOra): Smart Shopping Assistant & Copilot</h4>
+                                <p class="featured-subtitle">Cross-Platform React Native Mobile App • Multi-Model AI Backend • Next.js B2B Portal</p>
+                            </div>
+                            <span class="platform-tag">iOS + Android + Web</span>
+                        </div>
+
+                        <p class="featured-overview">
+                            An advanced intelligent grocery and shopping assistant designed to help users minimize spending, track historical prices, and automate receipt digestion. Architected as a complete multi-tier ecosystem: a React Native mobile application for consumers, an asynchronous Node.js & Python AI microservice backend, and a modern Next.js 15 analytics dashboard for business partners.
+                        </p>
+
+                        <div class="features-columns">
+                            <div class="feat-col">
+                                <h6><i class="fa-solid fa-receipt"></i> Computer Vision & Receipt OCR</h6>
+                                <p>Automated receipt digitizer using GPT-4o Vision and GPT-4o-mini with automatic fallback, extracting itemized lines, discounts, VAT, and store metadata in seconds.</p>
+                            </div>
+                            <div class="feat-col">
+                                <h6><i class="fa-solid fa-robot"></i> Streaming AI Copilot</h6>
+                                <p>Interactive conversational AI assistant powered by Claude Haiku with Server-Sent Events (SSE) streaming for real-time meal planning, recipe generation, and budget advice.</p>
+                            </div>
+                            <div class="feat-col">
+                                <h6><i class="fa-solid fa-arrow-trend-up"></i> ML Price Forecasting</h6>
+                                <p>Dedicated Python FastAPI microservice utilizing Facebook Prophet to forecast seasonal grocery price fluctuations and suggest optimal purchasing windows.</p>
+                            </div>
+                            <div class="feat-col">
+                                <h6><i class="fa-solid fa-magnifying-glass"></i> Vector Similarity Matching</h6>
+                                <p>Semantic product normalization and catalog matching using OpenAI embeddings (text-embedding-3-small) paired with Qdrant vector database.</p>
+                            </div>
+                        </div>
+
+                        <div class="featured-footer">
+                            <div class="featured-stack">
+                                <span>React Native 0.77</span><span>Node.js / Express</span><span>Python FastAPI</span><span>Prophet ML</span><span>Qdrant Vector DB</span><span>Prisma / PostgreSQL</span><span>Redis</span><span>Next.js 15</span><span>AWS S3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        
+                        <!-- Project: Sanitaria Asia -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-notes-medical"></i> Healthcare Digital Platform</span>
+                                <span class="proj-status">Production Client</span>
+                            </div>
+                            <h5 class="proj-name">Sanitaria Asia: Medical Equipment & Orthopedic Portal</h5>
+                            <p class="proj-desc">
+                                Enterprise web presence and digital product catalog for a specialized medical, healthcare, and orthopedic equipment provider. Built with Next.js and React, featuring optimized media delivery, interactive medical supply catalogs, patient inquiry workflows, and Dockerized production deployment.
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Optimized Core Web Vitals for instant browsing and catalog search</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Docker container deployment ensuring dependable high uptime</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>Next.js</span><span>React</span><span>Docker</span><span>Responsive UI</span><span>Tailwind CSS</span>
+                            </div>
+                        </div>
+
+                        <!-- Project: AGESCI Guidonia 1 -->
+                        <div class="proj-card">
+                            <div class="proj-top">
+                                <span class="proj-category"><i class="fa-solid fa-campground"></i> Community Portal & Booking</span>
+                                <span class="proj-status">Production Live</span>
+                            </div>
+                            <h5 class="proj-name">AGESCI Guidonia 1 Official Portal & Base Booking</h5>
+                            <p class="proj-desc">
+                                Production web platform (guidoniauno.it) serving the historic AGESCI Guidonia 1 organization. Includes scout chalet & base reservation systems, dynamic photo archives with lightbox optimization (Sharp), Google APIs integration, and automated email notifications (Nodemailer).
+                            </p>
+                            <div class="proj-highlights">
+                                <span><i class="fa-solid fa-angle-right"></i> Integrated scout base reservation inquiry engine with Nodemailer</span>
+                                <span><i class="fa-solid fa-angle-right"></i> Server-side image optimization pipeline utilizing Sharp & Vercel Blob</span>
+                            </div>
+                            <div class="proj-stack">
+                                <span>Next.js</span><span>TypeScript</span><span>Google APIs</span><span>Sharp</span><span>Vercel</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section class="section-container" id="contact">
+                <div class="contact-banner">
+                    <div class="contact-backdrop"></div>
+                    <div class="contact-content">
+                        <span class="section-eyebrow">Get In Touch</span>
+                        <h3 class="contact-headline">Let's Connect & Build Resilient Systems</h3>
+                        <p class="contact-lead">
+                            I am always interested in discussing software engineering challenges, data pipelines, distributed systems, and cutting-edge applied AI opportunities.
+                        </p>
+                        <div class="contact-action-row">
+                            <a href="mailto:valeriofiorentini2002@gmail.com" class="contact-btn">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>valeriofiorentini2002@gmail.com</span>
+                            </a>
+                            <a href="tel:+393281163674" class="contact-btn">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>(+39) 328 1163674</span>
+                            </a>
+                            <a href="https://github.com/valeriofiorentini" target="_blank" rel="noopener" class="contact-btn">
+                                <i class="fa-brands fa-github"></i>
+                                <span>github.com/valeriofiorentini</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
             <footer class="app-footer">
-                <p>&copy; 2026 <strong>Valerio Fiorentini</strong>. Engineered with modern HTML5, CSS3 & JavaScript.</p>
+                <p>&copy; 2026 <strong>Valerio Fiorentini</strong> — Software Engineer • Data Engineer • Data Scientist</p>
             </footer>
 
         </main>
 
-        <!-- RIGHT MINIMAL VERTICAL NAV (Desktop) -->
-        <nav class="right-vertical-nav" aria-label="Quick Navigation">
-            <a href="#home" class="v-nav-item active" title="Home"><i class="fa-solid fa-house"></i><span>Home</span></a>
-            <a href="#services" class="v-nav-item" title="Domains"><i class="fa-solid fa-layer-group"></i><span>Domains</span></a>
-            <a href="#experience" class="v-nav-item" title="Experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a>
-            <a href="#education" class="v-nav-item" title="Education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a>
-            <a href="#projects" class="v-nav-item" title="Projects"><i class="fa-solid fa-code"></i><span>Projects</span></a>
-            <a href="#contact" class="v-nav-item" title="Contact"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
+        <!-- RIGHT QUICK NAV -->
+        <nav class="quick-nav" aria-label="Page Navigation">
+            <a href="#home" class="quick-nav-link active" title="Home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            <a href="#pillars" class="quick-nav-link" title="Disciplines"><i class="fa-solid fa-layer-group"></i><span>Pillars</span></a>
+            <a href="#experience" class="quick-nav-link" title="Experience"><i class="fa-solid fa-briefcase"></i><span>Work</span></a>
+            <a href="#education" class="quick-nav-link" title="Education"><i class="fa-solid fa-graduation-cap"></i><span>Edu</span></a>
+            <a href="#projects" class="quick-nav-link" title="Projects"><i class="fa-solid fa-code"></i><span>Projects</span></a>
+            <a href="#contact" class="quick-nav-link" title="Contact"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
         </nav>
 
     </div>
