@@ -1,50 +1,60 @@
-# Valerio Fiorentini - Personal Portfolio & Interactive CV
+# Valerio Fiorentini — Software Engineer & AI Architect
 
-[![Live Demo](https://img.shields.io/badge/Hosted%20On-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com)
-[![Tech](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JavaScript-blue?style=flat-square)](https://developer.mozilla.org)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio%20Website-ffb400?style=for-the-badge&logo=vercel&logoColor=black)](https://cv-fiorentini-valerio.vercel.app)
+[![Tech Stack](https://img.shields.io/badge/Stack-Python%20%7C%20FastAPI%20%7C%20Next.js%20%7C%20AWS-blue?style=for-the-badge)](https://github.com/valeriofiorentini)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-A modern, responsive, high-performance personal portfolio and interactive curriculum vitae built with pure HTML5, vanilla CSS3, and JavaScript.
-
----
-
-## 🌟 Features
-
-- **Modern Glassmorphism & Cyber/Dark Theme**: Clean aesthetics designed for recruiters and tech leads.
-- **Lightweight & High Performance**: 0 dependencies, fast load times, and 100% SEO & Mobile friendly.
-- **Curated Sections**:
-  - **Hero**: Quick intro, contact points, and call-to-action buttons.
-  - **About & Skills**: Key tech stack (Python, TypeScript, React, Next.js, Node.js, Cloud, ML).
-  - **Experience**: Timeline of software engineering roles and achievements.
-  - **Education**: Computer Science degree and relevant coursework.
-  - **Selected Projects**: Showcases academic Machine Learning projects, production client platforms, and internal enterprise architectures.
-- **One-Click Deployable**: Zero-config hosting on Vercel or GitHub Pages.
+Source repository for the interactive developer portfolio and curriculum vitae of **Valerio Fiorentini**. Designed with a high-contrast dark dashboard theme, modular microservice architecture showcases, and zero external runtime dependencies.
 
 ---
 
-## 🚀 Deployment to Vercel
+## 👨‍💻 About Me
 
-1. Go to [Vercel](https://vercel.com/) and sign in with your GitHub account.
-2. Click **"Add New..."** > **"Project"**.
-3. Select `cv-fiorentini-valerio` from the repository list and click **Import**.
-4. Leave all build settings as default (Static HTML).
-5. Click **Deploy**. Your portfolio will be live in seconds at `https://cv-fiorentini-valerio.vercel.app`!
+Software Engineer with **3+ years of production experience** taking end-to-end ownership of scalable cloud architectures, asynchronous message brokers, data/ETL pipelines, and applied AI systems.
+
+- 🎓 **MSc in Computer Engineering (AI & Machine Learning)** — Roma Tre University
+- 🎓 **BSc in Computer Engineering** — Università Telematica Internazionale UNINETTUNO
+- 📜 **Microsoft Certified: Fabric Data Engineer** | Cisco Cybersecurity | Kaggle Pandas
+- 💼 **Software Engineer & System Architect** at Live Tech Srl (2021 – Present)
 
 ---
 
-## 📁 Repository Structure
+## ⚡ Core Technical Competencies
 
-```text
-.
-├── index.html       # Portfolio structure, semantic HTML5, SEO meta tags
-├── style.css        # Custom CSS variables, responsive design, dark mode theme
-├── script.js        # Smooth scrolling, mobile nav, interactive elements
-└── README.md        # Project documentation
+- **Languages & Frameworks:** Python (FastAPI, Scikit-learn, PyTorch), TypeScript, JavaScript, Next.js, React, Node.js
+- **Cloud & Distributed Systems:** AWS (S3, Aurora RDS), RabbitMQ, Celery, Microservices, Docker, GitLab CI/CD
+- **AI & Data Engineering:** YOLO Object Detection, Multi-Camera Computer Vision, Production LLMs & NLP, High-Throughput ETL
+
+---
+
+## 🚀 Key Highlighted Projects
+
+1. **Enterprise Message Broker & Asynchronous Dispatcher:** Event-driven architecture with RabbitMQ and Python microservices for guaranteed-delivery enterprise communications.
+2. **High-Throughput Retail ETL Pipeline:** Automated extraction, transformation, and reconciliation engine synchronizing large multi-store catalogs.
+3. **Multi-Camera Industrial Vision & YOLO Defect Detection:** Deep learning defect detection system fine-tuned on industrial camera feeds.
+4. **Yelp Big Data Intelligence & Hybrid Recommender:** Spatial GIS mapping, NLP sentiment/topic modeling, and matrix factorization recommendation.
+5. **Heuristic Scheduling Optimization:** Algorithmic solver for NP-Hard resource-constrained scheduling constraints.
+6. **Shop Ora Guidonia 1:** Production multi-vendor local commerce marketplace built on Next.js.
+7. **Sanitaria Asia Healthcare Portal:** Medical equipment catalog and patient inquiry portal.
+
+---
+
+## 🛠️ Local Development
+
+Clone the repository and open `index.html` in any modern browser:
+
+```bash
+git clone https://github.com/valeriofiorentini/cv-fiorentini-valerio.git
+cd cv-fiorentini-valerio
+# Open index.html directly or serve with a local server:
+npx serve .
 ```
 
 ---
 
-## 📬 Contact
+## 📬 Contact & Links
 
-- **Email**: [valeriofiorentini2002@gmail.com](mailto:valeriofiorentini2002@gmail.com)
-- **GitHub**: [@valeriofiorentini](https://github.com/valeriofiorentini)
+- **Live Website:** [cv-fiorentini-valerio.vercel.app](https://cv-fiorentini-valerio.vercel.app)
+- **GitHub:** [@valeriofiorentini](https://github.com/valeriofiorentini)
+- **Email:** [valeriofiorentini2002@gmail.com](mailto:valeriofiorentini2002@gmail.com)
+- **Location:** Rome / Guidonia, Italy
